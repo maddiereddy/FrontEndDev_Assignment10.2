@@ -1,0 +1,22 @@
+<div class="details">
+
+    <a href="#myModal" role="button" class="btn btn-large btn-primary" data-toggle="modal">Launch Demo Modal</a>
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"><ng-content select=".header" ></ng-content></h4>
+                </div>
+                <div class="modal-body">
+                    <ng-content select=".body" ></ng-content>
+                </div>
+                <div class="modal-footer">
+                    <ng-content select=".footer" ></ng-content>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
